@@ -28,6 +28,12 @@
                         <p>Film List</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('genre') ?>" class="nav-link">
+                        <i class="nav-icon far fa fa-users"></i>
+                        <p>Genre List</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
