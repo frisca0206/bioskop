@@ -24,3 +24,11 @@ $routes->get('/genre/delete/(:num)', 'GenreController::delete/$1',['as' => 'genr
 $routes->get('/genre/create', 'GenreController::create',['as' => 'genre-create']);
 $routes->post('/genre/store', 'GenreController::store',['as' => 'genre-store']);
 $routes->post('/genre/update', 'GenreController::update',['as' => 'genre-update']);
+
+
+$routes->get('/kursi', 'KursiController::index',['as' => 'kursi']);
+$routes->get('/kursi/edit/(:num)', 'KursiController::edit/$1',['as' => 'kursi-edit']);
+$routes->get('/kursi/delete/(:num)', 'KursiController::delete/$1',['as' => 'kursi-delete']);
+$routes->get('/kursi/create', 'KursiController::create',['as' => 'kursi-create']);
+$routes->post('/kursi/store', 'KursiController::store',['as' => 'kursi-store']);
+$routes->post('/kursi/update', 'KursiController::update',['as' => 'kursi-update']);
