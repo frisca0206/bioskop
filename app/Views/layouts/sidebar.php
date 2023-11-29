@@ -40,6 +40,12 @@
                         <p>Seat Number</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('cemilan') ?>" class="nav-link">
+                        <i class="nav-icon far fa fa-users"></i>
+                        <p>Snacks</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

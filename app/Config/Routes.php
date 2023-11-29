@@ -32,3 +32,11 @@ $routes->get('/kursi/delete/(:num)', 'KursiController::delete/$1',['as' => 'kurs
 $routes->get('/kursi/create', 'KursiController::create',['as' => 'kursi-create']);
 $routes->post('/kursi/store', 'KursiController::store',['as' => 'kursi-store']);
 $routes->post('/kursi/update', 'KursiController::update',['as' => 'kursi-update']);
+
+
+$routes->get('/cemilan', 'CemilanController::index',['as' => 'cemilan']);
+$routes->get('/cemilan/edit/(:num)', 'CemilanController::edit/$1',['as' => 'cemilan-edit']);
+$routes->get('/cemilan/delete/(:num)', 'CemilanController::delete/$1',['as' => 'cemilan-delete']);
+$routes->get('/cemilan/create', 'CemilanController::create',['as' => 'cemilan-create']);
+$routes->post('/cemilan/store', 'CemilanController::store',['as' => 'cemilan-store']);
+$routes->post('/cemilan/update', 'CemilanController::update',['as' => 'cemilan-update']);
