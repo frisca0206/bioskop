@@ -24,13 +24,13 @@
                 </li>
                 <li class="nav-item">
                     <a href="<?= url_to('film') ?>" class="nav-link">
-                        <i class="nav-icon far fa fa-users"></i>
+                        <i class="nav-icon fas fa-film"></i>
                         <p>Film List</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="<?= url_to('genre') ?>" class="nav-link">
-                        <i class="nav-icon far fa fa-users"></i>
+                        <i class="nav-icon fas fa-record-vinyl"></i>
                         <p>Genre List</p>
                     </a>
                 </li>
@@ -42,13 +42,13 @@
                 </li>
                 <li class="nav-item">
                     <a href="<?= url_to('cemilan') ?>" class="nav-link">
-                        <i class="nav-icon far fa fa-users"></i>
+                        <i class="nav-icon fas fa-hamburger"></i>
                         <p>Snacks</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="<?= url_to('bioskop') ?>" class="nav-link">
-                        <i class="nav-icon far fa fa-users"></i>
+                        <i class="nav-icon fas fa-ticket-alt"></i>
                         <p>Cinema</p>
                     </a>
                 </li>
