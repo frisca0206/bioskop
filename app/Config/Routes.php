@@ -40,3 +40,11 @@ $routes->get('/cemilan/delete/(:num)', 'CemilanController::delete/$1',['as' => '
 $routes->get('/cemilan/create', 'CemilanController::create',['as' => 'cemilan-create']);
 $routes->post('/cemilan/store', 'CemilanController::store',['as' => 'cemilan-store']);
 $routes->post('/cemilan/update', 'CemilanController::update',['as' => 'cemilan-update']);
+
+
+$routes->get('/bioskop', 'BioskopController::index', ['as' => 'bioskop']);
+$routes->get('/bioskop/edit/(:num)', 'BioskopController::edit/$1',['as' => 'bioskop-edit']);
+$routes->get('/bioskop/delete/(:num)', 'BioskopController::delete/$1',['as' => 'bioskop-delete']);
+$routes->get('/bioskop/create', 'BioskopController::create',['as' => 'bioskop-create']);
+$routes->post('/bioskop/store', 'BioskopController::store',['as' => 'bioskop-store']);
+$routes->post('/bioskop/update', 'BioskopController::update',['as' => 'bioskop-update']);
