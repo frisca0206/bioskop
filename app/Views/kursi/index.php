@@ -30,7 +30,7 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="kursi_table" class="table table-bordered tabe-hover">
+                            <table id="kursi_table" class="table table-bordered tabe-hover masterdata-datatable">
                                 <thead>
                                     <tr>
                                         <th>Seat Number</th>
