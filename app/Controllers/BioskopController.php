@@ -31,6 +31,10 @@ class BioskopController extends BaseController
         ->join('kursi','kursi.id = bioskop.nomor_kursi_id')
         ->join('cemilan','cemilan.id = bioskop.cemilan_id')->findAll();
 
+        foreach ($cinemas as $key => $cinema){
+            $cinemas[$key]['harga_tiket'] = $this->rupiah($cinema['harga_tiket']);
+        }
+
         $data = [
             'title' => 'Cinema Management',
             'page_title' => 'Cinema List',
@@ -116,5 +120,11 @@ class BioskopController extends BaseController
     {
         $this->BioskopModel->delete($bioskop_id);
         return redirect()->to('bioskop');
+    }
+
+    public function rupiah($angka)
+    {
+        $hasil_rupiah = "Rp " . number_format($angka,2,',',',');
+        return $hasil_rupiah;
     }
 }
